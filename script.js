@@ -26,8 +26,8 @@ function generateBoard(size) {
 
   board.innerHTML = "";
   board.style.display = "grid";
-  board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-  board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+  board.style.gridTemplateColumns = `repeat(${size}, 40px)`;
+  board.style.gridTemplateRows = `repeat(${size}, 40px)`;
 
   isPlayerOneTurn = Math.random() < 0.5;
   updateTurnIndicator();
